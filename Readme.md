@@ -12,7 +12,7 @@ This design template is part with [HTML5 UP](http://html5up.net/) and
  is Licensed under the  [Creative Commons Attribution](https://html5up.net/license)  license.
 
 ## Preview of Home Page
-![Home Page](https://i.gyazo.com/7f17f32ad3bdf8ad2807a7d6d0ffc55d.jpg)
+![Home Page](https://i.gyazo.com/6dc28a3a1ef84c04fa06116b1bdfec93.jpg)
 The [Website](https://github.com/KFChinese/ILP-Portfolio) is now live with GitHub Pages!
 
 ## The Instructions for Completing The ILP Portfolio Website Shell
