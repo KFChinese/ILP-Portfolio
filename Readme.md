@@ -1,5 +1,6 @@
 # Welcome to Larry Chiem's ILP Portfolio!
 
+The Link to [ILP Portfolio Home Page](https://github.com/KFChinese/ILP-Portfolio)
 
 **[Please Note]: This is an ongoing WIP  Project for
  [California State University, Monterey Bay's Online Computer Science Program](https://csumb.edu/csonline).**
@@ -12,6 +13,7 @@ This design template is part with [HTML5 UP](http://html5up.net/) and
 
 ## Preview of Home Page
 ![Home Page](https://i.gyazo.com/7f17f32ad3bdf8ad2807a7d6d0ffc55d.jpg)
+The [Website](https://github.com/KFChinese/ILP-Portfolio) is now live with GitHub Pages!
 
 ## The Instructions for Completing The ILP Portfolio Website Shell
 
