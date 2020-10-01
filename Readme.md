@@ -36,6 +36,7 @@ This design template is part with [HTML5 UP](http://html5up.net/) and
     -   (Optional) Anything else you would like to include that you have worked on in the course
 
 **You are free to use any web service**  you are comfortable with (Google Sites, Weebly, Wix, etc. or CSUMB hosting for hand-coded sites),  **but we recommend Weebly**  for its ease of use and archiving abilities. 
+
 *(Is using GitHub Pages too much?)*
 
 ![Oh No](https://media1.tenor.com/images/ad30224a41cc30d21966f9c54aca12b8/tenor.gif)
