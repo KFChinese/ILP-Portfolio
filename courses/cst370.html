@@ -73,9 +73,119 @@
 
                     <br><br><br><br>
                     <div>
-                        <h2>Projects</h2>
+                        <h2>Assignment Code 6.1 </h2>
                         <hr>
 
+                        <pre><code class="language-sql">
+                            #include &lt;bits/stdc++.h&gt;
+                            using namespace std;
+                             
+                            int main(){
+                                
+                                int n, m;
+                                cin>> n >> m;
+                                int board[n][m];
+                                for(int i = 0; i < n; i++){
+                                    
+                                    for(int j = 0; j < m; j++){
+                                        
+                                        cin >> board[i][j];
+                                    }
+                                }
+                            
+                                int dp[n][m] = {};
+                                for(int i = 0; i < n; i++){
+                                    for(int j = 0; j < m; j++){
+                                        if(i > 0)
+                                            dp[i][j] = max(dp[i][j], dp[i-1][j] + board[i][j]);
+                                        if(j > 0)
+                                            dp[i][j] = max(dp[i][j], dp[i][j-1] + board[i][j]);
+                                    }
+                                }
+                            
+                                vector<pair<int, int>> path;
+                                path.push_back({n,m});
+                                int i = n - 1, j = m - 1;
+                                while(!(i <= 0 && j <= 0)){
+                                    int left = -1, up = -1;
+                                    if(i > 0)
+                                        up = dp[i-1][j];
+                                    if(j > 0)
+                                        left = dp[i][j-1];
+                            
+                                    if(left >= up)
+                                        j--;
+                                    else
+                                        i--;
+                                    path.push_back({i+1, j+1});
+                                }
+                                reverse(path.begin(), path.end());
+                                cout << "Max coins: " << dp[n-1][m-1] << "\n";
+                                cout << "Path:";
+                                for(int i = 0; i < path.size(); i++){
+                                    cout << "(" << path[i].first << "," << path[i].second << ")";
+                                    if(i != path.size() - 1)
+                                        cout << "->";
+                                    else
+                                        cout << "\n";
+                                }    
+                                return 0;
+                            }  </code></pre>
+                        <hr>
+                        <h2>Assignment Code 6.2 </h2>
+                        <hr>
+                        <pre><code class="language-sql">
+                            #include  &lt;iostream&gt;
+                            using namespace std;
+                            
+                            
+                            
+                            int main(){
+                                int n = 0;
+                                int INF = 99999;
+                                cin >> n;  
+                            
+                                int dist[n][n];
+                            
+                                for(int i = 0; i < n; i++)
+                                for(int j = 0; j < n; j++) {
+                                    
+                                    int num = 0;
+                                    
+                                    cin >> num;
+                            
+                                    if(num == -1)
+                                        dist[i][j] = INF;
+                                    else
+                                        dist[i][j] = num;
+                                }
+                            
+                            
+                                for (int k = 0; k < n; k++)
+                                for (int i = 0; i < n; i++)
+                                for (int j = 0; j < n; j++) {
+                                    if (dist[i][k] + dist[k][j] < dist[i][j])
+                                    dist[i][j] = dist[i][k] + dist[k][j];
+                                }
+                            
+                            
+                                for(int i = 0; i < n; i++) {
+                                for(int j = 0; j < n; j++)
+                                
+                                if (dist[i][j] == 99999){
+                                    cout << -1 <<  " ";
+                                }
+                                
+                                else
+                                    cout << dist[i][j] <<  " ";
+                                    cout << "\n";
+                                }
+                            
+                                cout << endl;
+                                return 0;
+                            
+                            }
+                            </code></pre>
                         <hr>
                     </div>
                 </div>
